@@ -15,3 +15,4 @@ resource "oci_core_instance" "ubuntu_instance" {
     assign_public_ip = true
     subnet_id        = oci_core_subnet.subnet.id
 }
+}
