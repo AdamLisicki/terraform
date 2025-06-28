@@ -5,6 +5,7 @@ variable "tenancy_ocid" {}
 variable "user_ocid" {}
 variable "fingerprint" {}
 variable "private_key" {}
+variable "public_key" {}
 variable "region" {
   default = "eu-frankfurt-1"
 }
