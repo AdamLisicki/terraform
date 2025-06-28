@@ -18,3 +18,4 @@ resource "oci_core_instance" "ubuntu_instance" {
     ssh_authorized_key = var.public_key
   }
 }
+}
