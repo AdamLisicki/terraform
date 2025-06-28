@@ -4,7 +4,7 @@ resource "oci_core_instance" "ubuntu_instance" {
   compartment_id      = var.compartment_ocid
   shape               = "VM.Standard.E2.1.Micro"
   metadata = {
-    ssh_authorized_keys = replace(var.public_key, "\\n", "\n")
+    ssh_authorized_keys = var.public_key
   }
   source_details {
     source_id   = data.oci_core_images.ubuntu.images[0].id
